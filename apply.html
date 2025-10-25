@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLA-IFE Loan Application Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      /* background-image: url('images/WhatsApp Image 2025-10-24 at 17.19.35_e1050391.jpg'); */
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class="logo-space">
+            <img class="logo" src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg  " alt="">
+        </div>
+
+        <!-- toggle button for small screens -->
+        <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <div class="nav-list" id="nav-list">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="apply.html">APPLY FOR A LOAN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/nav.js"></script>
+</body>
+</html>
+
+  <div class="container">
+    <h2>OLA-IFE Loan Application Form</h2>
+    <form action="https://formsubmit.co/lwfmolaleye@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Loan Application">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <label>Full Name:</label>
+      <input type="text" name="Full Name" required>
+
+      <label>Email Address:</label>
+      <input type="email" name="Email" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="Phone" required>
+
+      <label>Loan Amount Requested (₦):</label>
+      <input type="number" name="Loan Amount" required>
+
+      <label>Purpose of Loan:</label>
+      <textarea name="Purpose" rows="3" required></textarea>
+
+      <label>Preferred Disbursement Method:</label>
+      <select id="disbursementMethod" name="Disbursement Method" required>
+        <option value="">-- Select --</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+        <option value="Mobile Money">Mobile Money</option>
+        <option value="Cash Pickup">Cash Pickup</option>
+      </select>
+
+      <!-- Bank Transfer Section -->
+      <div id="bankFields" style="display:none;">
+        <label>Bank Name:</label>
+        <select name="Bank Name">
+          <option value="">-- Select Bank --</option>
+          <optgroup label="🏦 Commercial Banks">
+            <option>Access Bank</option>
+            <option>Citibank Nigeria</option>
+            <option>Ecobank Nigeria</option>
+            <option>Fidelity Bank</option>
+            <option>First Bank of Nigeria</option>
+            <option>First City Monument Bank (FCMB)</option>
+            <option>Globus Bank</option>
+            <option>Guaranty Trust Bank (GTBank)</option>
+            <option>Heritage Bank</option>
+            <option>Keystone Bank</option>
+            <option>Polaris Bank</option>
+            <option>Premium Trust Bank</option>
+            <option>Providus Bank</option>
+            <option>Stanbic IBTC Bank</option>
+            <option>Standard Chartered Bank</option>
+            <option>Sterling Bank</option>
+            <option>SunTrust Bank</option>
+            <option>Titan Trust Bank</option>
+            <option>Union Bank of Nigeria</option>
+            <option>United Bank for Africa (UBA)</option>
+            <option>Unity Bank</option>
+            <option>Wema Bank</option>
+            <option>Zenith Bank</option>
+          </optgroup>
+
+          <optgroup label="💳 Digital & Mobile Banks">
+            <option>Kuda Bank</option>
+            <option>Opay (PalmPay)</option>
+            <option>FairMoney MFB</option>
+            <option>Moniepoint MFB</option>
+            <option>Carbon MFB</option>
+            <option>VFD Microfinance Bank</option>
+            <option>Sparkle Bank</option>
+            <option>Parallex Bank</option>
+            <option>Eyowo MFB</option>
+            <option>Mint Digital Bank</option>
+            <option>Rubies Bank</option>
+            <option>LOTUS Bank</option>
+            <option>TAJ Bank</option>
+            <option>Rephidim MFB</option>
+            <option>Moneymie MFB</option>
+          </optgroup>
+        </select>
+
+        <label>Account Number:</label>
+        <input type="text" name="Account Number" required>
+      </div>
+
+      <!-- Mobile Money Section -->
+      <div id="mobileFields" style="display:none;">
+        <label>Mobile Money Provider:</label>
+        <select name="Mobile Money Provider">
+          <option value="">-- Select Provider --</option>
+          <option>Opay</option>
+          <option>PalmPay</option>
+          <option>Moniepoint</option>
+          <option>Paga</option>
+          <option>Kuda</option>
+          <option>FairMoney</option>
+          <option>Carbon</option>
+        </select>
+
+        <label>Wallet/Account Number:</label>
+        <input type="text" name="Wallet Number">
+      </div>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script>
+    const disbursement = document.getElementById('disbursementMethod');
+    const bankFields = document.getElementById('bankFields');
+    const mobileFields = document.getElementById('mobileFields');
+
+    disbursement.addEventListener('change', function() {
+      bankFields.style.display = this.value === 'Bank Transfer' ? 'block' : 'none';
+      mobileFields.style.display = this.value === 'Mobile Money' ? 'block' : 'none';
+    });
+  </script>
+<!-- ...existing code... -->
+<!-- ...existing code... -->
+ <!-- ...existing code... -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col about">
+                <img class="footer-logo" src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg" alt="Ola-Ife logo">
+                <p>Ola‑Ife Co‑operative Society — responsible, community-first lending since 2022.</p>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="apply.html">Apply for a loan</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <p>Phone: <a href="tel:+234800000000">+234 800 000 000</a></p>
+                <p>Email: <a href="mailto:info@ola-ife.org">info@ola-ife.org</a></p>
+                <p>Address: 123 Community St., Your City</p>
+            </div>
+
+            <div class="footer-col social">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <small>© <span id="year"></span> Ola‑Ife Co‑operative Society. All rights reserved.</small>
+        </div>
+    </footer>
+<!-- <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.getElementById('nav-list');
+
+    if (!toggle || !navList) return;
+
+    toggle.addEventListener('click', function () {
+        const isShown = navList.classList.toggle('show');
+        toggle.setAttribute('aria-expanded', isShown ? 'true' : 'false');
+    });
+
+    // close nav when a link is clicked (small screens)
+    navList.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A' && navList.classList.contains('show')) {
+            navList.classList.remove('show');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    // optional: close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && navList.classList.contains('show')) {
+            navList.classList.remove('show');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+});
+</script> -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.querySelector(".nav-toggle");
+      const navList = document.querySelector(".nav-list");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navList.classList.toggle("show");
+        navToggle.classList.toggle("open", isOpen);
+        navToggle.querySelector(".icon").textContent = isOpen ? "✕" : "☰";
+      });
+
+      document.querySelectorAll(".nav-list a").forEach(link => {
+        link.addEventListener("click", () => {
+          navList.classList.remove("show");
+          navToggle.classList.remove("open");
+          navToggle.querySelector(".icon").textContent = "☰";
+        });
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

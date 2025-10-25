@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLA-IFE: YOUR TRUSTWORTHY CO-OPERATIVE FIRM</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo-space">
+            <img class="logo" src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg" alt="">
+        </div>
+
+        <!-- toggle button for small screens -->
+        <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <div class="nav-list" id="nav-list">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="apply.html">APPLY FOR A LOAN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/nav.js"></script>
+</body>
+</html>
+    <main>
+        <section class="about" style="padding:40px 6%; box-sizing:border-box;">
+            <h1>About Ola‑Ife Co‑operative Society</h1>
+
+            <p>
+                Established in 2022, Ola‑Ife provides responsible, transparent financial solutions
+                to individuals and small businesses in our community. Since then we've helped many
+                members access the funds they need — and successfully repay — bringing stability and growth.
+            </p>
+
+            <h2 style="margin-top:28px;">Our team</h2>
+            <p>We are a small, local team combining finance experience with friendly, personalised service.</p>
+
+            <div class="team-grid" style="margin-top:18px;">
+                <div class="team-member">
+                    <img class="team-photo" src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg" alt="Mr. Femi OLALEYE — Founder & CEO" />
+                    <h3>Mr. Femi OLALEYE</h3>
+                    <div class="role">Founder & President, WorldWide.</div>
+                    <p>Provides vision and ensures member-first, fair-lending policies across the society.</p>
+                </div>
+
+                <div class="team-member">
+                    <img class="team-photo" src="images/team/samuel-okoro.jpg" alt="Samuel Okoro — Loan Officer" />
+                    <h3>Mr. HARUNA Idris</h3>
+                    <div class="role">Loan Officer</div>
+                    <p>Works directly with applicants to design loan options that match needs and capacity.</p>
+                </div>
+
+                <div class="team-member">
+                    <img class="team-photo" src="images/team/amaka-bello.jpg" alt="Amaka Bello — Operations Manager" />
+                    <h3>Pastor Abiola DANIELS.</h3>
+                    <div class="role">Operations Manager</div>
+                    <p>Oversees loan processing, repayments and day-to-day operations to keep services smooth.</p>
+                </div>
+
+                <div class="team-member">
+                    <img class="team-photo" src="images/WhatsApp Image 2025-10-24 at 11.52.38_2635df90.jpg "alt ="Customer Support" />
+                    <h3>Mrs Sarah OLALEYE</h3>
+                    <div class="role">Customer Support/Welfare.</div>
+                    <p>Provides guidance and friendly help throughout the application and repayment journey.</p>
+                </div>
+            </div>
+
+            <p style="margin-top:22px;">
+                <a class="btn" href="apply.html">Apply for a loan</a>
+                <a class="btn" href="index.html" style="background:#888;margin-left:10px;">Back to Home</a>
+            </p>
+        </section>
+    </main>
+<!-- ...existing code... -->
+<!-- ...existing code... -->
+ <!-- ...existing code... -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col about">
+                <img class="footer-logo" src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg" alt="Ola-Ife logo">
+                <p>Ola‑Ife Co‑operative Society — responsible, community-first lending since 2022.</p>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="apply.html">Apply for a loan</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <p>Phone: <a href="tel:+234800000000">+234 800 000 000</a></p>
+                <p>Email: <a href="mailto:info@ola-ife.org">info@ola-ife.org</a></p>
+                <p>Address: 123 Community St., Your City</p>
+            </div>
+
+            <div class="footer-col social">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <small>© <span id="year"></span> Ola‑Ife Co‑operative Society. All rights reserved.</small>
+        </div>
+    </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.querySelector(".nav-toggle");
+      const navList = document.querySelector(".nav-list");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navList.classList.toggle("show");
+        navToggle.classList.toggle("open", isOpen);
+        navToggle.querySelector(".icon").textContent = isOpen ? "✕" : "☰";
+      });
+
+      document.querySelectorAll(".nav-list a").forEach(link => {
+        link.addEventListener("click", () => {
+          navList.classList.remove("show");
+          navToggle.classList.remove("open");
+          navToggle.querySelector(".icon").textContent = "☰";
+        });
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

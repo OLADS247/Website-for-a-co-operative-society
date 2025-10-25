@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLA-IFE: YOUR TRUSTWORTHY CO-OPERATIVE FIRM</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav-bar">
+    <div class="logo-space">
+      <img class="logo" src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg" alt="Ola-Ife Logo" />
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="icon">☰</span>
+    </button>
+    <div class="nav-list">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="apply.html">APPLY FOR A LOAN</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section class="Home">
+    <div class="home-text">
+      <h1>Welcome to <br><span>Ola-Ife OLOSUN (ADO-ODO/OTA)CMS.</span></h1>
+      <h3>Your trusted partner in financial solutions. We offer personalized loan options
+        to help you achieve your goals with ease and confidence.</h3>
+      <a href="about.html" class="btn">Get Started</a>
+    </div>
+    <div class="home-image">
+      <img src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg" alt="Financial Growth" />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col about">
+        <img class="footer-logo" src="images/WhatsApp Image 2025-10-25 at 10.20.29_f277b5d6.jpg" alt="Ola-Ife logo" />
+        <p>Ola-Ife OLOSUN (ADO-ODO/OTA)CMS — responsible, community-first lending since 2022.</p>
+      </div>
+      <div class="footer-col links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="apply.html">Apply for a loan</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h4>Contact</h4>
+        <p>Phone: <a href="tel:+234800000000">+234 8032269146</a></p>
+        <p>Email: <a href="mailto:info@ola-ife.org">info@ola-ife.org</a></p>
+        <p>Address: 123 Community St., Your City</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>© <span id="year"></span> Ola-Ife OLOSUN (ADO-ODO/OTA)CMS. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.querySelector(".nav-toggle");
+      const navList = document.querySelector(".nav-list");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navList.classList.toggle("show");
+        navToggle.classList.toggle("open", isOpen);
+        navToggle.querySelector(".icon").textContent = isOpen ? "✕" : "☰";
+      });
+
+      document.querySelectorAll(".nav-list a").forEach(link => {
+        link.addEventListener("click", () => {
+          navList.classList.remove("show");
+          navToggle.classList.remove("open");
+          navToggle.querySelector(".icon").textContent = "☰";
+        });
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

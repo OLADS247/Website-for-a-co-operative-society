@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Loan Application Form</h1>
+    <form action="../server/send_email.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="loanAmount">Loan Amount:</label>
+        <input type="number" id="loanAmount" name="loanAmount" required>
+
+        <label for="disbursementLocation">Disbursement Location:</label>
+        <input type="text" id="disbursementLocation" name="disbursementLocation" required>
+
+        <input type="submit" value="Submit Application">
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
