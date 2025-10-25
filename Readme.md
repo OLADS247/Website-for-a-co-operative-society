@@ -122,7 +122,8 @@ This website is fully responsive 📱💻, user-friendly, and built with modern 
 
 🔗 View Live Demo
 
-(Replace YOUR_LIVE_DEMO_LINK_HERE with your hosted website URL)
+(https://olads247.github.io/Website-for-a-co-operative-society/
+)
 
 ✨ Features
 
@@ -219,6 +220,7 @@ Home page
 
 
 Apply page
+
 
 
 Contact page
