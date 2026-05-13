@@ -10,7 +10,7 @@ This website is fully responsive 📱💻, user-friendly, and built with modern 
 
 🔗 View Live Demo
 
-(Replace YOUR_LIVE_DEMO_LINK_HERE with your hosted website URL)
+(website-for-a-co-operative-society.vercel.app)
 
 ✨ Features
 
